@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressource.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="menu-bar">
+                <ul class="navbar">
+                    <li><a href="apropos2.html">A Propos</a></li>
+                    <li><a href="#">Programmes<i class='bx bx-chevron-down'></i></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Programme 1</a></li>
+                                <li><a href="#">Programme 2</a></li>
+                                <li><a href="#">Programme 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Valeurs</a></li>
+                    <li><a href="#">Ressources<i class='bx bx-chevron-down'></i></a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Livre Blanc</a></li>
+                                <li><a href="#">Quizz</a></li>
+                                <li><a href="#">Appli</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////// CSS /////////////
+
+.menu-bar {
+    background-color: white;
+    margin-top: -5px;
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 1.2em;
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #fff ;
+    margin-top: 15px;
+    margin-left: -40px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    text-align: left;
+    width: 150px;
+    padding: 10px;
+    border-radius: 0;
+    background: transparent;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none ;
+}
+
+
+
+.navbar li:after,
+.navbar li:before {
+  content: "";
+  width: 0%;
+  display: block;
+  height: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2px;
+  transition: all 300ms ease-in;
+}
+
+.navbar li:after {
+  bottom: 25%;
+  left: 0;
+}
+
+.navbar li:before {
+  top: 25%;
+  right: 0;
+}
+
+.navbar li:hover::after {
+  width: 7em;
+  height: 1px;
+  bottom: 25%;
+  background-color: black;
+}
+
+.navbar li:hover::before {
+  width: 7em;
+  height: 1px;
+  top: 25%;
+  background-color: black;
+} 
+
+button {
+    margin-top: 5rem;
+}
+
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #067790;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48 {
+    margin-top: 20rem;
+    margin-left: 15rem;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
