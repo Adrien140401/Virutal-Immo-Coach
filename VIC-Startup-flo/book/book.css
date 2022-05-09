@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background:white;                  
+}
+
+h1{
+    position: relative;
+    font-size: 45px;
+    color: black;
+    bottom: 30%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: underline 2px;
+}
+
+.cover p{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color:black ;
+    text-align: center;
+    top: 40%;
+    text-decoration: underline 0.5px;
+    
+}
+
+.book{
+    position: relative;
+    bottom: 10%;
+    cursor: pointer;
+    right: 23%;
+}
+
+.book:hover .cover{
+    transform: rotateX(10deg) rotateY(-180deg);
+}
+.book:hover .page{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index: 2;
+}
+
+.cover{
+    z-index: 1;
+    transition: all 3s;
+}
+
+.back-cover{
+    z-index: -2;
+}
+
+.cover,
+.back-cover{
+    height: 300px;
+    width: 260px;
+    background: #DFB708;
+    border-radius: 2px 20px 20px 2px;
+    position: absolute;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.178);
+    transform: rotateX(10deg);
+    transform-origin: center left;
+}
+
+.page,
+.last-page{
+    height: 280px;
+    width: 250px;
+    background-color: whitesmoke;
+    position: absolute;
+    border-radius: 2px 10px 10px 2px;
+    transform: rotateX(10deg);
+    transform-origin: center left;
+    z-index: -1;
+}
+
+.page:nth-child(2){
+    transition-duration: 3s;
+}
+.page:nth-child(3){
+    transition-duration: 2.6s;
+}
+.page:nth-child(4){
+    transition-duration: 2.2s;
+}
+.page:nth-child(5){
+    transition-duration: 1.8s;
+}
+.page:nth-child(6){
+    transition-duration: 1.4s;
+}
+
+.last-page img{
+    width: 170px;
+    height: 170px;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    z-index: -1;
+}
+
+.book:hover .page:nth-child(2){
+    transition-duration: 6s;
+}
+.book:hover .page:nth-child(3){
+    transition-duration: 5.6s;
+}
+.book:hover .page:nth-child(4){
+    transition-duration: 5.2s;
+}
+.book:hover .page:nth-child(5){
+    transition-duration: 4.8s;
+}
+.book:hover .page:nth-child(6){
+    transition-duration: 4.4s;
+}
+
+.button-10{
+position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  border-radius: 6px;
+  border: none;
+  left: 27%;
+  color: black;
+  background: linear-gradient(180deg, #DFB708 0%, #fccf09 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-10:focus{
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+
+.buttonaccueil{
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 14px;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      border-radius: 6px;
+      border: none;
+      left: 27%;
+      color: rgb(255, 255, 255);
+      background: linear-gradient(180deg, #535353 0%, #535353b6 100%);
+       background-origin: border-box;
+      box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .buttonaccueil:focus{
+      box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+      outline: 0;
+    }

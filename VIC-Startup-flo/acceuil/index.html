@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Accueil - Virtual Immo Coach</title>
+</head>
+<body>
+    <section class="try1">
+        <div class="container">
+            <div class="menu-bar">
+                <ul class="navbar">
+                    <li><a href="apropos2.html">A Propos</a></li>
+                    <li><a href="programme.html">Programmes</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="programme.html#programme1">Programme 1</a></li>
+                                <li><a href="programme.html#programme2">Programme 2</a></li>
+                                <li><a href="programme.html#programme3">Programme 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="valeurs.html">Valeurs</a></li>
+                    <a href="index.html"><img class="logo"  src="/images/LOGO_150PX_Fond_transparent.png" alt="logo"> </a> 
+                    <li><a href="ressource.html">Ressources</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="book.html">Livre Blanc</a></li>
+                                <li><a href="quizz.html">Quizz</a></li>
+                                <li><a href="#">Appli</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="div">
+            <div class="texte">
+                <div class="titreText">
+                <h1>Virtual Immo Coach</h1>
+                <p class="citation"><em>Ils ne savaient pas que c'était impossible, alors ils l'ont fait.</em></p>
+                    <div class="button">
+                    <a href="apropos2.html"><button class="button-48" role="button"><span class="text">A Propos</span></button></a>
+                    </div>
+                </div>
+                <div id="photo">
+                  <img src="" class="carnet" alt=""> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRYYYYYYYYY  -->
+
+
+    <section>
+
+        <div class="question" data-aos="fade-down-right">
+            <p>Es-tu réellement prêt(e) à investir dans l'immobilier locatif ?</p>
+        </div>
+
+            <a href="#" class="btntest">Fais le test !</a>
+
+            <div class="phrase1"><p>Lance toi à ton rythme.</p></div>
+
+            <table>
+                <tr>
+                    <th>Je découvre l'investissement locatif</th>
+                    <th>Je dépasse mes peurs</th>
+                    <th>Je me laisse guider</th>
+                </tr>
+                <tr>
+                    <td><img class="programme" src="/images/Programme_1.jpg" width="300px" height="300px"></td>
+                    <td><img class="programme" src="/images/Programme_2.jpg" width="300px" height="300px"></td>
+                    <td><img class="programme" src="/images/Programme_3.jpg" width="300px" height="300px"></td>
+                    
+                </tr>
+                <tr>
+                    <td class="clique"> <a href="programme.html#programme1"> Je découvre → </a></td>
+                    <td class="clique"> <a href="programme.html#programme2"> Je me lance → </a></td>
+                    <td class="clique"> <a href="programme.html#programme3"> Je m'engage → </a></td>
+                </tr>
+            </table>
+            <a href="programme.html" class="btnprog">Découvre tout les Programmes</a>
+            <p class="temoins">Ils témoignent :</p>
+    </section>
+
+    
+
+
+    <div class="slidercontainer"></div>
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/images/Programme_1.jpg"></div>
+            <div class="swiper-slide"><img src="/images/Programme_2.jpg"></div>
+            <div class="swiper-slide"><img src="/images/Programme_3.jpg"></div>
+            <div class="swiper-slide"><img src="/images/nature-7045125_1280.webp"></div>
+ 
+        </div>
+     <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+ </div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:2000,
+            disableOnIteraction:false,
+        },
+
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+});
+</script>
+
+
+
+
+
+<section id="testimonials">
+    <div class="container_container">
+<!-- Top -->
+
+    <div class="testimonials_container" >
+        <div class="testimonial_item">
+            <img src="/images/avatar1.png" alt="avatar1"/>
+            <div class="testimonial_info">
+                <p>« Cette formation nous a donné tous les outils et les informations nécessaires pour investir de manière sereine dans notre premier achat locatif. 
+                    Victoria est très pédagogue et disponible, ce qui est très rassurant pour ce genre de démarche. 
+                    Les sessions sont complétées avec de nombreux fichiers très utiles pour calculer la rentabilité, prévoir les visites, chercher un financement... Et surtout le résultat : en moins de trois mois nous avons pu investir dans notre premier projet locatif ! 
+                    Je recommandes à fond cette formation. » 
+                </p>
+                <h6>Camille & Lucas</h6>
+            <div class="testimonial_rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials_container">
+        <div class="testimonial_item">
+            <img src="/images/avatar2.jpeg" alt="avatar2"/>
+            <div class="testimonial_info">
+                <p>« La formation est très intéressante. On voit en détail toutes les étapes de l’investissement immobilier.
+                     De la réflexion du projet à la location du bien. Victoria donne tout au long de cette formation de précieux conseils et est toujours disponible pour répondre à nos questions.
+                      Grace a elle nous nous sommes mis des objectifs. En 3 mois on a trouvé un bien rentable et signé le compromis de vente 🙂 » 
+                </p>
+                <h6>Julian & Séverine</h6>
+
+            <div class="testimonial_rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="testimonials_container">
+        <div class="testimonial_item">
+            <img src="/images/avatar3.webp" alt="avatar3"/>
+            <div class="testimonial_info">
+                <p>« Ayant pour projet d’investir dans un appartement, nous avons fait appel à Victoria qui a su parfaitement répondre à toutes nos interrogations, sur tous les points de vue. 
+                    Grâce à Victoria, nous voyons plus clair aujourd’hui concernant notre projet. 
+                    Je vous recommande vivement de la contacter pour tout projet d’investissement, personne très fiable qui saura répondre et vous aiguiller dans vos projets! » 
+                </p>
+                <h6>Alisson</h6>
+
+            <div class="testimonial_rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section>   
+    <div class="verticaltext">
+        <h3>Email</h3>
+        <p>Recevoirs des emails pour découvrir l'immobilier sous un nouveau jour →</p>
+    </div>
+    <div class="textprenom"><input type="prenom" name="txtprenom" id="txtprenom" value="" placeholder="Prénom" maxlength="12" enable/></div>
+    <div class="textemail"><input type="email" name="txtemail" id="txtemail" value="" placeholder="Email" maxlength="12" enable/></div>
+    <button class="button-48 btn" role="button"><span class="text">Recevoir les emails</span></button>
+
+</section>
+
+
+
+
+
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="programme.html">Programmes</a></li>
+                                <li><a href="ressource.html">Ressources</a></li>
+                                <li><a href="valeurs.html">Valeurs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="apropos2.html">A Propos</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="politique.html">Politique de confidentialité</a></li>
+                            <li><a href="mention.html">Mentions légales</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Virtual Immo Coach</h3>
+                            <p>Investissez dans l'immobilier en toute sérénité avec Victoria.  </p>
+                        </div>
+                        <div class="col item social"><a href="https://www.linkedin.com/company/virtual-immo-coach"><i class='bx bxl-linkedin-square'></i></i></a><a href="https://pin.it/5MhOrWN"><i class='bx bxl-pinterest'></i></a><a href="https://www.instagram.com/virtual.immo.coach/"><i class='bx bxl-instagram'></i></a><a href="https://www.facebook.com/virtual.immo.coach/"><i class='bx bxl-facebook-circle' ></i></a></div>
+                        
+                    </div>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
