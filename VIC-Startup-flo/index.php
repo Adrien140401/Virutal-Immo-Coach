@@ -60,7 +60,7 @@
           
     <section class="second-block">
         <!-- <a href="programme.html" class="btnprog">Découvre tout les Programmes</a> -->
-        <p>.</p>
+        <p class="aaa">Ils témoignent :</p>
 
         <div class="container_container">
                 <div class="testimonials_container" >

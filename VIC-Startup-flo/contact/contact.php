@@ -14,22 +14,6 @@
     
     <?php require('../html_partials/header.php') ?>
 
-    
-    <!-- <div class="container-fluid fond">
-        <div class="container">
-            <div class="row">
-                <p class="citationImg">"C'est au contact d'autrui que l'homme apprend ce qu'il sait"</p>
-            </div>
-        </div>
-    </div>
-    
-
-    <section>
-        <div data-tf-widget="se2Ibi4W" data-tf-iframe-props="title=Contact" data-tf-medium="snippet" style="width:100%;height:400px;"></div>
-        <script src="//embed.typeform.com/next/embed.js"></script> 
-    </section> -->
-    
-
         <section>
             <div class="imagefond">    
                 <p class="citationImg"> "C'est au contact d'autrui que l'homme apprend ce qu'il sait" </p>
